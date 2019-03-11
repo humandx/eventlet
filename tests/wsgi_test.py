@@ -116,7 +116,7 @@ class Site(object):
 
 
 class IterableApp(object):
-    def __init__(self, send_start_response=False, return_val=[]):
+    def __init__(self, send_start_response=False, return_val=()):
         self.send_start_response = send_start_response
         self.return_val = return_val
         self.env = {}
